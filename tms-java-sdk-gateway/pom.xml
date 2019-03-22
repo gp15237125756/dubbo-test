@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tms-others</artifactId>
+        <groupId>com.rbsn.tms</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>tms-java-sdk-gateway</artifactId>
+    <name>tms-java-sdk-gateway</name>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!--<build>
+    <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.5.5</version>
+        <configuration>
+            <archive>
+                <manifest>
+                    <mainClass>com.gd.net.NetMain</mainClass>
+                </manifest>
+            </archive>
+            &lt;!&ndash;<descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>&ndash;&gt;
+        </configuration>
+        &lt;!&ndash;下面是为了使用 mvn package命令，如果不加则使用mvn assembly&ndash;&gt;
+        &lt;!&ndash;<executions>&ndash;&gt;
+            &lt;!&ndash;<execution>&ndash;&gt;
+                &lt;!&ndash;<id>make-assemble</id>&ndash;&gt;
+                &lt;!&ndash;<phase>package</phase>&ndash;&gt;
+                &lt;!&ndash;<goals>&ndash;&gt;
+                    &lt;!&ndash;<goal>single</goal>&ndash;&gt;
+                &lt;!&ndash;</goals>&ndash;&gt;
+            &lt;!&ndash;</execution>&ndash;&gt;
+        &lt;!&ndash;</executions>&ndash;&gt;
+    </plugin>
+    </plugins>
+    </build>-->
+</project>
